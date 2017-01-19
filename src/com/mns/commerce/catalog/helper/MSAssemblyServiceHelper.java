@@ -63,5 +63,21 @@ public final class MSAssemblyServiceHelper {
         }
         return token;
     }
+    
+    /**
+     * Method to generate request token that will be passed while calling APIs
+     * @param constant
+     * @param position
+     * @return
+     */
+    public static int addTwoNumbers(int a, int b){
+        int c=0;
+        if(a >= b){
+        	c=a-b;
+        } else{
+        	c=b-a;
+        }
+    	return c;
+    }
 
 }
