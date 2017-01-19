@@ -36,6 +36,12 @@ public class MSAssemblyServiceHelperTest {
         String token = MSAssemblyServiceHelper.generateRequestTokenWithTimeStamp("constant","ABC");
         Assert.assertTrue("".equals(token));
     }
+    
+    @Test
+    public void addTwoNumbers_a(){
+        int c = MSAssemblyServiceHelper.addTwoNumbers(5,2);
+        Assert.assertEquals(3,c);
+    }
 
 
 }
